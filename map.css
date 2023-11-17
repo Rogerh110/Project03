@@ -1,17 +1,27 @@
-#wrapper {
-  width: 80vw;
-  height: 80vh;
-  background-color: orange;
-  margin: 0 auto;
-  overflow: hidden;
-  border-radius: 5px;
+body {
+  padding: 7.5vh;
 }
 
-#canvas {
-  width: 90%;
-  height: 90%;
-  background-color: #ccc;
-  margin: 2.5% auto;
-  border-radius: 5px;
+#navbar {
+  top: 0;
+  left: 0;
+}
 
+#wrapper {
+  box-sizing: border-box;
+  width: 65vw;
+  height: 65vh;
+  border: 10px solid orange;
+  background-color: orange;
+  margin: 10vh auto;
+  overflow: hidden;
+  border-radius: 10px;
+  align-items: center;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: orange;
 }
