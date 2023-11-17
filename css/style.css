@@ -1,0 +1,182 @@
+ /* universal html and body */
+ html {
+   background-color: orange;
+   box-sizing: border-box;
+   color: rgb(50, 50, 50);
+ }
+
+ body {
+   background-color: whitesmoke;
+   padding: 10vh 0 0 0;
+   margin: 0;
+ }
+
+ /* universal nav  */
+ #navbar {
+   background-color: whitesmoke;
+   width: 100%;
+   height: 10vh;
+   position: fixed;
+   top: 0;
+   z-index: 5;
+   border-bottom: 1px solid orange;
+ }
+
+ #navbar ul {
+   list-style: none;
+   text-align: center;
+   padding: 0;
+
+ }
+
+ #navbar ul li {
+   display: inline-block;
+   margin: auto 0;
+ }
+
+ #navbar ul li a {
+   padding: 0rem 1.5rem 0.25rem 1.5rem;
+   text-decoration: none;
+   font-family: "tomarik-display", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 2rem;
+   color: orange;
+   border-radius: 50px;
+   border: 1px solid transparent;
+   transition: 150ms ease-in-out;
+ }
+
+ #navbar ul li a:hover {
+   color: orangered;
+   font-family: "tomarik-display-shadow", sans-serif;
+   border: 1px solid orangered;
+   border-radius: 50px;
+ }
+
+ /* universal footer  */
+ footer {
+   background-color: whitesmoke;
+   width: 100%;
+   height: 7.5vh;
+   align-items: center;
+   border-top: 1px solid orange;
+ }
+
+ footer p {
+   color: lightgray;
+   text-decoration: none;
+   padding-left: 10vw;
+ }
+
+ /* universal styles  */
+ h1 {
+   font-size: 2em;
+   margin: 1vh auto;
+ }
+
+ h2 {
+   color: orange
+ }
+
+ /* homepage styles */
+ .introsec {
+   width: 80vw;
+   margin: 5vh auto 10vh auto;
+   background-color: rgb(245, 245, 245);
+ }
+
+ .introsec img {
+   border-radius: 5px;
+   transition: 150ms ease-in-out;
+ }
+
+ .introsec img:hover {
+   border-radius: 12.5px;
+   box-shadow: 10px 10px 1px 1px orange;
+ }
+
+ .catfacts {
+   width: 80vw;
+   margin: 0 auto 10vh auto;
+   line-height: 1.5em;
+ }
+
+ .catfacts h3 {
+   font-size: 2rem;
+   margin: 3rem auto 1rem auto;
+   transition: 150ms ease-in-out;
+   color: orange;
+ }
+
+ .catfacts h3:hover {
+   color: orangered;
+ }
+
+ /* End of homepage styles */
+
+ /* resume styles  */
+ .profilediv {
+   width: 40vw;
+   height: 80vh;
+   background-color: whitesmoke;
+   border: 1px solid orange;
+   position: fixed;
+   top: 10vh;
+   left: 10vw;
+   overflow: hidden;
+ }
+
+ .profilediv img {
+   width: 100%;
+   height: auto;
+   margin: 0;
+   transition: 1000ms ease-in-out;
+ }
+
+ .profilediv img:hover {
+   background-color: orange;
+ }
+
+ .per-info {
+   position: static;
+   /* border-right: 1px solid orange; */
+   width: 35vw;
+   height: 80vh;
+   margin: 0 20vw 0 50vw;
+   padding: 3.5vh 40px;
+   line-height: 1.5em;
+ }
+
+ /* End of resume styles  */
+
+ /* cat section styles  */
+ .catsec {
+   width: 80vw;
+   height: 80vh;
+   margin: 0 auto;
+   justify-content: center;
+   padding-top: 2vh;
+ }
+
+ .meme {
+   width: 19.5%;
+   height: 350px;
+   display: inline-block;
+   overflow: hidden;
+ }
+
+ img {
+   height: 100%;
+   width: auto;
+   overflow: hidden;
+ }
+
+ .memegif {
+   height: auto;
+   width: 20%;
+   display: inline-block;
+   /* align-self: self-start; */
+ }
+
+ /* End of cat section styles  */
