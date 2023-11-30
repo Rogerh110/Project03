@@ -7,15 +7,17 @@
 
  body {
    background-color: whitesmoke;
-   padding: 10vh 0 0 0;
+   padding: 0;
    margin: 0;
+   min-height: 90vh;
+   padding-top: 10vh;
  }
 
  /* universal nav  */
  #navbar {
    background-color: whitesmoke;
    width: 100%;
-   height: 10vh;
+   height: auto;
    position: fixed;
    top: 0;
    z-index: 5;
@@ -26,12 +28,13 @@
    list-style: none;
    text-align: center;
    padding: 0;
-   margin: auto 0;
+   margin-top: 1.5rem;
  }
 
  #navbar ul li {
    display: inline-block;
-   margin: 3vh 0;
+   /* margin: 3vh; */
+   /* background-color: blue; */
  }
 
  #navbar ul li a {
@@ -87,6 +90,8 @@
  }
 
  .introsec img {
+   width: 50%;
+   height: auto;
    border-radius: 5px;
    transition: 150ms ease-in-out;
  }
@@ -179,55 +184,86 @@
    /* align-self: self-start; */
  }
 
- /* End of cat section styles  */
-
-
  .bxslider {
    width: 19.5%;
    height: 350px;
  }
 
+ /* End of cat section styles  */
 
+
+ /* Map section tyles  */
+ #wrapper {
+   box-sizing: border-box;
+   width: 65vw;
+   height: 65vh;
+   border: 10px solid orange;
+   background-color: orange;
+   margin: 10vh auto;
+   overflow: hidden;
+   border-radius: 10px;
+   align-items: center;
+ }
+
+ #map {
+   width: 100%;
+   height: 100%;
+   border-radius: 5px;
+   background-color: orange;
+ }
+
+ /* End of map section styles  */
 
 
 
  @media (min-width: 768px) and (max-width: 1200px) {
-   #navbar {
-     height: 7.5vh;
-   }
-
-   #navbar ul {
-     padding: 0.25rem;
+   body {
+     padding: 0;
    }
 
    #navbar ul li {
-     margin: 1.55vh 0;
+     margin: 0.5vh 0;
    }
 
    #navbar ul li a {
+     font-size: 1.5rem;
+   }
+
+
+   .introsec img {
+     width: 80%;
+     height: auto;
+   }
+
+   .catfacts h3 {
      font-size: 1.75rem;
+   }
+
+   .catsec {
+     width: 90vw;
+     height: 90vh;
+   }
+
+   .meme {
+     width: 19.5%;
+     height: 250px;
+   }
+
+   #wrapper {
+     width: 80vw;
+     height: 70vh;
+     margin: 7.5vh auto;
    }
  }
 
 
  @media (max-width: 767px) {
-   #navbar {
-     height: 7.5vh;
-   }
-
-   #navbar ul {
-     padding: 0.25rem;
-   }
-
-   #navbar ul li {
-     margin: 3vh 0;
+   body {
+     padding: 0;
    }
 
    #navbar ul li a {
-     padding: 0rem 1rem 0.25rem 1rem;
      font-size: 1.25rem;
-     color: orange;
-     border: none;
    }
 
    #navbar ul li a:hover {
@@ -236,4 +272,35 @@
      border: none;
    }
 
+   .catfacts h3 {
+     font-size: 1.25rem;
+   }
+
+   .introsec img {
+     width: 100%;
+     height: auto;
+   }
+
+   .catsec {
+     width: 90vw;
+     height: 100vh;
+     margin: 0 auto;
+     justify-content: center;
+     padding-top: 2vh;
+   }
+
+   .meme {
+     width: 19%;
+     height: 150px;
+   }
+
+   .catfacts {
+     text-align: justify;
+   }
+
+   #wrapper {
+     width: 90vw;
+     height: 60vh;
+     margin: 10vh auto;
+   }
  }

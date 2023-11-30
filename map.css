@@ -1,13 +1,15 @@
-body {
-  padding: 7.5vh;
-}
+/* body {
+  height: 90vh;
+  padding-top: 10vh;
+} */
 
+/* 
 #navbar {
   top: 0;
   left: 0;
-}
+} */
 
-#wrapper {
+/* #wrapper {
   box-sizing: border-box;
   width: 65vw;
   height: 65vh;
@@ -30,7 +32,8 @@ body {
 @media (min-width: 768px) and (max-width: 1200px) {
   #wrapper {
     width: 80vw;
-    height: 80vh;
+    height: 70vh;
+    margin: 7.5vh auto;
   }
 }
 
@@ -38,7 +41,7 @@ body {
 @media (max-width: 767px) {
   #wrapper {
     width: 90vw;
-    height: 90vh;
+    height: 60vh;
     margin: 10vh auto;
   }
-}
+} */
