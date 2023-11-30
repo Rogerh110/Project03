@@ -7,10 +7,9 @@
 
  body {
    background-color: whitesmoke;
-   padding: 0;
    margin: 0;
-   min-height: 90vh;
-   padding-top: 10vh;
+   min-height: 100vh;
+   padding-top: 5vh;
  }
 
  /* universal nav  */
@@ -75,17 +74,23 @@
  /* universal styles  */
  h1 {
    font-size: 2em;
-   margin: 1vh auto;
+   /* margin: 1vh auto; */
+   padding-top: 10vh;
+   line-height: 1rem;
  }
 
  h2 {
    color: orange
  }
 
+ p {
+   line-height: 1.5em;
+ }
+
  /* homepage styles */
  .introsec {
    width: 80vw;
-   margin: 5vh auto 10vh auto;
+   margin: 0 auto 10vh auto;
    background-color: rgb(245, 245, 245);
  }
 
@@ -104,7 +109,7 @@
  .catfacts {
    width: 80vw;
    margin: 0 auto 10vh auto;
-   line-height: 1.5em;
+
  }
 
  .catfacts h3 {
@@ -123,7 +128,8 @@
  /* resume styles  */
  .profilediv {
    width: 40vw;
-   height: 80vh;
+   height: auto;
+   max-height: 78.5vh;
    background-color: whitesmoke;
    border: 1px solid orange;
    position: fixed;
@@ -134,7 +140,7 @@
 
  .profilediv img {
    width: 100%;
-   height: auto;
+   max-height: auto;
    margin: 0;
    transition: 1000ms ease-in-out;
  }
@@ -145,11 +151,9 @@
 
  .per-info {
    position: static;
-   /* border-right: 1px solid orange; */
    width: 35vw;
-   height: 80vh;
    margin: 0 20vw 0 50vw;
-   padding: 3.5vh 40px;
+   padding: 0 40px;
    line-height: 1.5em;
  }
 
@@ -161,12 +165,11 @@
    height: 80vh;
    margin: 0 auto;
    justify-content: center;
-   padding-top: 2vh;
  }
 
  .meme {
    width: 19.5%;
-   height: 350px;
+   height: 300px;
    display: inline-block;
    overflow: hidden;
  }
@@ -193,13 +196,29 @@
 
 
  /* Map section tyles  */
+ .mapsec {
+   width: 80vw;
+   height: auto;
+   margin: 0 auto;
+   justify-content: center;
+ }
+
+ .mapsec a {
+   text-decoration: none;
+   color: orange;
+ }
+
+ .mapsec a:hover {
+   color: orangered;
+ }
+
  #wrapper {
    box-sizing: border-box;
-   width: 65vw;
+   width: 100%;
    height: 65vh;
    border: 10px solid orange;
    background-color: orange;
-   margin: 10vh auto;
+   margin: 5vh auto;
    overflow: hidden;
    border-radius: 10px;
    align-items: center;
@@ -216,13 +235,22 @@
 
 
 
+
+
  @media (min-width: 768px) and (max-width: 1200px) {
    body {
      padding: 0;
    }
 
-   #navbar ul li {
-     margin: 0.5vh 0;
+   h1 {
+     font-size: 2em;
+     padding-top: 12vh;
+     line-height: 1rem;
+   }
+
+   p {
+     font-size: 1em;
+     line-height: 1.5em;
    }
 
    #navbar ul li a {
@@ -251,7 +279,7 @@
 
    #wrapper {
      width: 80vw;
-     height: 70vh;
+     height: 50vh;
      margin: 7.5vh auto;
    }
  }
@@ -260,6 +288,16 @@
  @media (max-width: 767px) {
    body {
      padding: 0;
+   }
+
+   h1 {
+     font-size: 1.75em;
+     line-height: 1rem;
+   }
+
+   p {
+     font-size: 0.8em;
+     line-height: 1.5em;
    }
 
    #navbar ul li a {
@@ -289,6 +327,23 @@
      padding-top: 2vh;
    }
 
+   .profilediv {
+     width: 80%;
+     height: auto;
+     background-color: whitesmoke;
+     position: initial;
+     overflow: hidden;
+     margin: 0 auto;
+   }
+
+   .per-info {
+     position: initial;
+     width: 80%;
+     /* padding: 5rem; */
+     line-height: 1.5em;
+     margin: 0 auto;
+   }
+
    .meme {
      width: 19%;
      height: 150px;
@@ -299,8 +354,8 @@
    }
 
    #wrapper {
-     width: 90vw;
-     height: 60vh;
+     width: 100%;
+     height: 50vh;
      margin: 10vh auto;
    }
  }
