@@ -26,12 +26,12 @@
    list-style: none;
    text-align: center;
    padding: 0;
-
+   margin: auto 0;
  }
 
  #navbar ul li {
    display: inline-block;
-   margin: auto 0;
+   margin: 3vh 0;
  }
 
  #navbar ul li a {
@@ -185,4 +185,55 @@
  .bxslider {
    width: 19.5%;
    height: 350px;
+ }
+
+
+
+
+
+ @media (min-width: 768px) and (max-width: 1200px) {
+   #navbar {
+     height: 7.5vh;
+   }
+
+   #navbar ul {
+     padding: 0.25rem;
+   }
+
+   #navbar ul li {
+     margin: 1.55vh 0;
+   }
+
+   #navbar ul li a {
+     font-size: 1.75rem;
+   }
+ }
+
+
+ @media (max-width: 767px) {
+   #navbar {
+     height: 7.5vh;
+   }
+
+   #navbar ul {
+     padding: 0.25rem;
+   }
+
+   #navbar ul li {
+     margin: 3vh 0;
+   }
+
+   #navbar ul li a {
+     padding: 0rem 1rem 0.25rem 1rem;
+     font-size: 1.25rem;
+     color: orange;
+     border: none;
+   }
+
+   #navbar ul li a:hover {
+     color: orangered;
+     font-family: "tomarik-display-shadow", sans-serif;
+     border: none;
+   }
+
  }
